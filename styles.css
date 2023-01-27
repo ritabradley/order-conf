@@ -1,0 +1,99 @@
+@import url(https://fonts.bunny.net/css?family=montserrat:400,500,700);
+
+:root {
+	--bg-gradient: linear-gradient(
+			45deg,
+			rgb(44.706% 95.294% 99.608%) 0%,
+			rgb(44.708% 95.281% 99.608%) 6.25%,
+			rgb(44.735% 95.082% 99.609%) 12.5%,
+			rgb(44.852% 94.222% 99.613%) 18.75%,
+			rgb(45.168% 91.926% 99.623%) 25%,
+			rgb(45.835% 87.17% 99.645%) 31.25%,
+			rgb(47.049% 78.821% 99.684%) 37.5%,
+			rgb(49.051% 65.915% 99.745%) 43.75%,
+			rgb(56.088% 52.13% 99.831%) 50%,
+			rgb(77.501% 55.218% 99.907%) 56.25%,
+			rgb(90.11% 57.236% 99.952%) 62.5%,
+			rgb(97.243% 58.463% 99.978%) 68.75%,
+			rgb(99.991% 59.139% 98.986%) 75%,
+			rgb(99.997% 59.459% 97.26%) 81.25%,
+			rgb(99.999% 59.579% 96.626%) 87.5%,
+			rgb(100% 59.606% 96.48%) 93.75%,
+			rgb(100% 59.608% 96.471%) 100%);
+	--fw-normal: 400;
+	--fw-medium: 500;
+	--fw-bold: 700;
+	--text-sm: 14px;
+	--text-md: 18px;
+	--text-lg: 24px;
+}
+
+/* RESET */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+	margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+	height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+	font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+	isolation: isolate;
+}
+
+body {
+	background: var(--bg-gradient);
+	min-height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: var(--fw-normal);
+	font-size: var(--text-md);
+}
