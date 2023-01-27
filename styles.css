@@ -165,3 +165,11 @@ h1 a {
 	height: 275px;
 	overflow: hidden;
 }
+
+@media (max-width: 415px) {
+	.bike-container {
+		margin-top: -100px;
+		height: 180px;
+	}
+
+}
